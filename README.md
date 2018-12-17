@@ -36,9 +36,20 @@ This makes a moderately interesting demo in and of itself, but it's far more int
 
 There are other tutorials and videos on Angular Elements. A common theme, however, is that that main _AppComponent_ is exported as a Web Component and the project setup is modified specifically for that purpose.
 
+Please note that this is not a complete tutorial on Angular Elements; there are several blog posts and videos that cover that topic.  It will be helpful to have at least reviewed available material on this topic before working with the code supplied in this repo.
+
+
 ## Basic Setup
 
-Project setup consists of three parts; an environment variable, an _app.module.ts_ file configured to use that variable, and a build script.
+Project setup consists of three parts; an environment variable, an _app.module.ts_ file configured to use that variable, and a build script.  But, before that, we need some polyfills (see _polyfills.ts_)
+
+```
+/***************************************************************************************************
+ * APPLICATION IMPORTS
+ */
+import '@webcomponents/custom-elements/src/native-shim';
+import '@webcomponents/custom-elements/custom-elements.min';
+```
 
 *****
 **Environment**
