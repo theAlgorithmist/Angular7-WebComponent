@@ -1,0 +1,40 @@
+canvas
+{
+  border: 1px solid #333;
+}
+
+.mainContent
+{
+  font-family: Arial, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+a.main
+{
+  text-decoration: none;
+}
+
+a.main:hover
+{
+  text-decoration: underline;
+}
+
+p.padded
+{
+  padding: 50px;
+}
+
+.mt20
+{
+  margin-top: 20px;
+}
+
+/* chrome numeric spinner is finicky about updating */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}

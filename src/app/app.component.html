@@ -1,0 +1,7 @@
+<!-- not part of the webcomponent -->
+<p class="mainContent">Press and drag to create a regular n-gon</p>
+<!-- this will be the custom webcomponent -->
+<ng-ngon-component width="400" height="400" (selected)="onRectSelected($event)" (sides)="onSidesSelected($event)"></ng-ngon-component>
+<!-- remainder is part of the Angular test environment (AppComponent) -->
+<p class="mainContent">N-gon sides: {{sides}}</p>
+<p class="mainContent">Bounding Rectangle: left: {{rectangle.left}} top: {{rectangle.top}} right: {{rectangle.right}} bottom: {{rectangle.bottom}}</p>
