@@ -41,7 +41,7 @@ Please note that this is not a complete tutorial on Angular Elements; there are 
 
 ## Basic Setup
 
-Project setup consists of three parts; an environment variable, an _app.module.ts_ file configured to use that variable, and a build script.  But, before that, we need some polyfills (see _polyfills.ts_)
+Project setup consists of three parts; an environment variable, an _app.module.ts_ file configured to use that variable, and a build script.  But, before that, we need some polyfills (see _polyfills.ts_) - zone.js fix is also performed here.
 
 ```
 /***************************************************************************************************
@@ -160,6 +160,8 @@ Using the _RectangularNgonComponent_ inside any supporting browser is relatively
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
+  <!-- zone.js fix -->
+  <script type="text/javascript" src="https://unpkg.com/zone.js@0.8.26/dist/zone.min.js"></script>
   <script type="application/javascript" src="ng-ngon-component.js"></script>
 </head>
 
@@ -195,9 +197,9 @@ Using the _RectangularNgonComponent_ inside any supporting browser is relatively
 </html>
 ```
 
-This example is actually [running on my domain](http://algorithmist.net/elements/index.html)
+This example is actually [running on my domain](http://algorithmist.net/elements/index.html).  The zone.js fix is technically not required for this to work, but this represents an easy workaround if you want to re-use the Angular Web Component inside Angular.
 
-Now, I made no attempt to optimize file size, either in imports from the _createjs_ library or by gzipping the bundle.  Just implementing the latter option takes bundle size down to 114K, which is rather respectable for everything the component is doing.
+Now, I made no attempt to optimize file size, either in imports from the _createjs_ library or by gzipping the bundle.  Just implementing the latter option takes bundle size down to just below 100K (with zone.js loaded in the _index.html_ file), which is rather respectable for everything the component is doing.
 
 Please feel free to experiment with additional browser polyfills and optimization ... but more importantly, have fun and drink more coffee!
 
