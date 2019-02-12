@@ -27,10 +27,11 @@
 
 // platform imports
 import { BrowserModule } from '@angular/platform-browser';
-import {NgModule, Injector, ApplicationRef} from '@angular/core';
+import { NgModule, Injector, ApplicationRef } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 
-// the usual suspects; AppComponent is used for interactive testing - the RegularNgonComponent is exported as a WebComponent during a prod build
+// the usual suspects; AppComponent is used for interactive testing - the RegularNgonComponent is exported as a
+// Web Component during a production build (see npm run build:webcomponent)
 import { AppComponent            } from './app.component';
 import { RegularNgonComponent    } from './components/regular-ngon.component';
 import { CanvasSelectorDirective } from './directives/canvas-selector/canvas-selector.directive';
