@@ -6,7 +6,7 @@ The component of interest is a combination of a (Canvas) rectangle selector and 
 
 The exported Web Component is currently running on my domain (algorithmist.net) - a link is provided at the end of the repo.  Experiment with different browsers and polyfill configurations to determine the scope under which this technique is usable for various applications.
 
-Author:  Jim Armstrong - [The Algorithmist](http://www.algorithmist.net)
+Author:  Jim Armstrong - [The Algorithmist](https://www.linkedin.com/in/jimarmstrong)
 
 @algorithmist
 
